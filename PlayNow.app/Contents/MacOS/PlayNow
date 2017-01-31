@@ -13,7 +13,7 @@ contents_xcplayground = <<XML
 XML
 
 time = Time.now.strftime "%Y%m%d-%H%M%S"
-path = Pathname.new "/tmp/playgrounder/#{time}.playground"
+path = Pathname.new "/User/steve/Playgrounds/#{time}.playground"
 path.rmtree if path.exist?
 path.mkpath
 File.open(path+"contents.xcplayground", 'w') {|f| f.write(contents_xcplayground) }
